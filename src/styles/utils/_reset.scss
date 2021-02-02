@@ -26,3 +26,14 @@ input:focus {
   outline: none;
   border-color: transparent;
 }
+
+@media screen and(min-width:2000px) {
+  .container {
+    margin-left: calc(50% - 1000px);
+  }
+  .header {
+    &__top {
+      margin-left: calc(50% - 1000px);
+    }
+  }
+}

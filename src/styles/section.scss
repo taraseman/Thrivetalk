@@ -1,5 +1,6 @@
 .container {
-  &section {
-    margin-bottom: 150px;
+  &__info,
+  &__box {
+    max-width: 2000px;
   }
 }
