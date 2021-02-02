@@ -17,8 +17,9 @@
     padding-bottom: 120px;
   }
   &__list {
+    max-width: 2000px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
   &__card {
@@ -26,6 +27,7 @@
     padding-bottom: 56%;
     padding-top: 26%;
     padding-left: 78px;
+    padding-right: 64px;
 
     &:first-child {
       background-color: #ffe2de;
@@ -47,15 +49,23 @@
 
   &__item {
     display: inline-block;
-    width: 255px;
+    max-width: 255px;
   }
 }
 
-// @media screen and(max-width:1330px) {
-//   .help {
-//     &__list {
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);
-//     }
-//   }
-// }
+@media screen and(max-width:1330px) {
+  .help {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and(max-width: 558px) {
+  .help {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
