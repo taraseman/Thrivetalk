@@ -1,0 +1,34 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 80px;
+  padding-left: 14%;
+
+  background-color: $active-color;
+  line-height: 80px;
+
+  &__text {
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: bold;
+    color: white;
+
+    &:before {
+      position: absolute;
+      top: 35px;
+      left: 12.4%;
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+
+      background-image: url("../images/s.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

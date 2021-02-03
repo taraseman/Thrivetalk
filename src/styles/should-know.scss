@@ -1,0 +1,80 @@
+.should-know {
+  display: flex;
+  &__img {
+    min-width: 480px;
+
+    background-image: url("../images/manoffice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+  }
+
+  &__content {
+    padding: 103px 175px 42px 106px;
+
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 23.5%;
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: normal;
+    color: $link-color;
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -1px;
+    color: $link-color;
+    font-weight: bold;
+    margin-bottom: 15.9%;
+  }
+
+  &__link {
+    font-size: 36px;
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 1100px ) {
+  .should-know {
+    flex-wrap: wrap;
+    &__img {
+      width: 100vw;
+      height: 600px;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+}
+
+@media screen and(max-width:520px) {
+  .should-know {
+    &__content {
+      padding: 30px 35px 42px 40px;
+    }
+
+    &__img {
+      min-width: 330px;
+      height: 600px;
+    }
+
+    &__text {
+      font-size: 25px;
+      line-height: 40px;
+    }
+
+    &__link {
+      font-size: 25px;
+      margin-right: 3px;
+    }
+
+    &__button {
+      margin-left: calc( 50% - 91px);
+    }
+  }
+}
