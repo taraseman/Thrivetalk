@@ -11,15 +11,17 @@
   line-height: 80px;
 
   &__text {
-    font-size: 14px;
-    line-height: 11px;
+    position: absolute;
+    left: 15%;
+
     font-weight: bold;
     color: white;
 
     &:before {
       position: absolute;
       top: 35px;
-      left: 12.4%;
+      left: -6%;
+      
       content: "";
       display: block;
       width: 10px;

@@ -2,8 +2,10 @@
   display: flex;
 
   background-color: #fff;
+
   &__img {
     min-width: 570px;
+
     background-image: url("../images/fallgirl.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,13 +14,10 @@
   }
 
   &__content {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 74px;
-    padding-top: 98px;
-    padding-left: 68px;
-    padding-right: 40px;
+    width: 100%;
+    padding: 98px 40px 74px 68px;
   }
 
   &__card {
@@ -49,6 +48,7 @@
 
   &__title {
     margin-bottom: 57px;
+
     font-size: 14px;
     font-weight: bold;
     line-height: 11px;
@@ -60,12 +60,14 @@
 @media screen and (max-width: 1100px ) {
   .adress {
     flex-direction: column;
+
     &__content {
       padding: 50px 30px 60px;
     }
 
     &__card {
       padding-right: 10px;
+
       font-size: 12px;
       line-height: 20px;
     }
@@ -73,6 +75,7 @@
     &__img {
       width: 100vw;
       height: 600px;
+
       background-position: center;
       background-size: cover;
     }
@@ -80,14 +83,16 @@
 }
 @media screen and(max-width:600px) {
   .adress {
+
     &__content {
       flex-direction: column;
     }
 
     &__card {
+      flex: 150px;
+
       font-size: 14px;
       line-height: 23px;
-      flex: 150px;
     }
 
     &__title {
@@ -95,7 +100,7 @@
     }
 
     &__img {
-      min-width: 330px;
+      min-width: 320px;
       height: 600px;
     }
   }

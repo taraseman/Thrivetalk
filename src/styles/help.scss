@@ -16,18 +16,16 @@
   &__container {
     padding-bottom: 120px;
   }
+
   &__list {
-    max-width: 2000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    max-width: 2000px;
   }
 
   &__card {
     box-sizing: border-box;
-    padding-bottom: 56%;
-    padding-top: 26%;
-    padding-left: 78px;
-    padding-right: 64px;
+    padding: 26% 64px 56% 78px;
 
     &:first-child {
       background-color: #ffe2de;

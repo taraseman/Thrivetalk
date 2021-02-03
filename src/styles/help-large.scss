@@ -1,15 +1,13 @@
 .help-large {
   padding-bottom: 22px;
+
   &__item {
     line-height: 34px;
   }
 
   &__card {
     box-sizing: border-box;
-    padding-bottom: 59%;
-    padding-top: 26%;
-    padding-left: 78px;
-    padding-right: 64px;
+    padding: 26% 64px 59% 78px;
 
     &:first-child {
       background-color: #22356f;
