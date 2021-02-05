@@ -22,7 +22,7 @@
   }
 }
 
-@media screen and(max-width:900px) {
+@media screen and(max-width: $info-screen) {
   .info {
 
     &__logo {

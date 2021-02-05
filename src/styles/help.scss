@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and(max-width:1330px) {
+@media screen and(max-width: $help-large-screen) {
   .help {
     &__list {
       display: grid;
@@ -59,7 +59,7 @@
     }
   }
 }
-@media screen and(max-width: 558px) {
+@media screen and(max-width: $help-small-screen) {
   .help {
     &__list {
       display: grid;

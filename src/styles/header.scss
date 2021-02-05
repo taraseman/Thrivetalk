@@ -96,11 +96,11 @@
 
 }
 
-@media screen and(max-width:900px) {
+@media screen and(max-width: $info-screen) {
   .header {
     padding: 10px 20px;
     height: 750px;
-    
+
     &__photo-border,
     &__photo,
     &__decoration {
@@ -118,6 +118,20 @@
     }
     &__nav {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and(min-width: $large-screen) {
+  .header {
+    padding: 27px calc(50% - 600px) 0;
+
+    &__top {
+      padding-left: 200px;
+    }
+
+    &__photo-border {
+      right: -200px;
     }
   }
 }

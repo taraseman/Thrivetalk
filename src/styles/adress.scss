@@ -81,7 +81,7 @@
     }
   }
 }
-@media screen and(max-width:600px) {
+@media screen and(max-width: $info-screen) {
   .adress {
 
     &__content {
